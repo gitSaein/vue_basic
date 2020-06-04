@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+-Flux 란
+스토어
+
+애플리케이션의 모든 상태를 유지하며 상태가 변경되면 이벤트를 발송한다(dispatch)
+뷰(리엑트 컴포넌트)는 필요한 데이터를 포합하는 스토어를 구독하여 데이터가 변경되면 자신을 다시 렌더링한다.
+스토어 자체에서만 데이터를 변경할 수 있다.
+
+액션
+
+모든 액션은 타입과 선택적인 페이로드를 포함한다. 스토어는 액션이 발송되면 자신의 데이터를 업데이트 한다.
+
+디스패치
+
+액션을 스토어로 전달하는 과정을 조율하고 스토어의 액션 핸들러가 올바른 순서로 실행되도록한다.
